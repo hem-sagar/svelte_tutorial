@@ -4,14 +4,20 @@
 
 <style>
 	nav {
-		border-bottom: 1px solid rgba(255,62,0,0.1);
-		font-weight: 300;
-		padding: 0 1em;
+		background: #fff3ef;
 	}
-
+nav div{
+	max-width: 1680px;
+	padding: 0 10px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+}
 	ul {
 		margin: 0;
 		padding: 0;
+		text-align: right;
 	}
 
 	/* clearfix */
@@ -22,8 +28,7 @@
 	}
 
 	li {
-		display: block;
-		float: left;
+		display: inline-block;
 	}
 
 	[aria-current] {
@@ -45,12 +50,18 @@
 		text-decoration: none;
 		padding: 1em 0.5em;
 		display: block;
+		text-transform: capitalize;
+	}
+	img{
+		width: 50px;
 	}
 </style>
 
 <nav>
+	<div>
+		<a href=".">
+<img src="logo/logo-192.png" alt=""></a>
 	<ul>
-		<li><a aria-current="{segment === undefined ? 'page' : undefined}" href=".">Home</a></li>
 		<li><a aria-current="{segment === 'about' ? 'page' : undefined}" href="about">About</a></li>
 
 		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
@@ -59,4 +70,5 @@
 		<li><a rel=prefetch aria-current="{segment === 'jobs' ? 'page' : undefined}" href="jobs">Jobs</a></li>
 		<li><a aria-current="{segment === 'contact' ? 'page' : undefined}" href="contact">Contact</a></li>
 	</ul>
+</div>
 </nav>
