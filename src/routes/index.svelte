@@ -9,6 +9,8 @@
 		text-transform: uppercase;
 		font-weight: 700;
 		margin: 0 0 0.5em 0;
+		/* color: #000; */
+		/* isolation: isolate; */
 	}
 
 	img {
@@ -23,10 +25,10 @@
 		margin-top: 60px;
 		text-align: center;
 	}
-	figcaption{
+	/* figcaption{
 		margin: 20px auto;
 		text-align: center;
-	}
+	} */
 
 	@media (min-width: 480px) {
 		h1 {

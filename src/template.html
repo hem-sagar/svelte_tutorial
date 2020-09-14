@@ -25,10 +25,15 @@
     %sapper.head%
 </head>
 
-<body>
+<body class="darkmode--activated">
     <!-- The application will be rendered inside this element,
 	     because `src/client.js` references it -->
     <div id="sapper">%sapper.html%</div>
 </body>
+<footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script src="./js/dark.js"></script>
+</footer>
 
 </html>
